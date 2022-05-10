@@ -19,13 +19,13 @@ NOJACK=1                       # jack will only be started when this is empty
 
 OPENMHA_INTERFACE="0.0.0.0"
 OPENMHA_PORT="33337"
-OPENMHA_OPTS="--daemon ?read:/etc/mahalia/generic-hearing-aid/index.cfg cmd=start"
+OPENMHA_OPTS="--daemon ?read:/etc/mahalia/mahalia_configuration/index.cfg cmd=start"
 NOJACK=1
 
 HEADSET=amplified
 
 export PHL_RIC_TYPE="speaker-s" # speaker-s, speaker-m
-export MHA_CONFIG_PATH="/etc/mahalia/generic-hearing-aid"
+export MHA_CONFIG_PATH="/etc/mahalia/mahalia_configuration"
 export MHA_CALIB_PATH="/etc/mahalia/calibration"
 export MHA_IOLIB="IOAlsa_PHL"
 
